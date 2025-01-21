@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     default: config.blog.metadata.title.default,
     template: config.blog.metadata.title.template,
   },
+  icons: {
+    icon: 'https://k31kdl3eukazsfrf.public.blob.vercel-storage.com/logo-zq4jdflGMiKiNset7ppt1QnVry11Qj.jpg'
+  },
   description: config.blog.metadata.description,
   openGraph: {
     title: config.blog.metadata.title.default,
@@ -33,6 +36,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="oiRLq23Iv8gz1hjSwJoFTb2RezpH1sN9TrSA7O9bsbA" />
+        <meta name="google-adsense-account" content="ca-pub-2701752350401037"/>
+        <link rel="icon" href="https://k31kdl3eukazsfrf.public.blob.vercel-storage.com/logo-zq4jdflGMiKiNset7ppt1QnVry11Qj.jpg" type="image/jpg" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-5xl m-auto",
